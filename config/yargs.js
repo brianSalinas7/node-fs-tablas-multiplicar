@@ -18,7 +18,8 @@ const argv = require('yargs')
                     alias:'hasta',
                     type:'number',
                     demandOption:true,
-                    default:10
+                    default:10,
+                    description:'limite hasta donde se muestra la multiplicacion'
                 })
                 .check((argv, option)=> {
                     if(isNaN(argv.b)){
